@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        input{
+            width: 300px;
+            height: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        button{
+            width: 300px;
+            height: 42px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            margin-bottom: 10px;
+            color: #ffffff;
+            background: linear-gradient(90deg, #50c9c3 0%, #96deda 100%);
+        }
+    </style>
+  </head>
+  <body>
+    <p>Random password Generator</p>
+    <button onclick="generatePassword()">Generate Password</button>
+    <div>
+      <label HTMLfor="password">Password:</label>
+      <p id="password" onclick="usePassword()" class="generatedPassword"></p>
+      <button onclick="usePassword()">Use This Password</button>
+    </div>
+    <form>
+        <input placeholder="Email" id="email" />
+        <input placeholder="Password" id="passwordField" />
+    </form>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
